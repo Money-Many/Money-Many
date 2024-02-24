@@ -1,0 +1,81 @@
+h1{font-size:50px;
+    color:pink;
+    animation-name:label;
+    animation-duration:4s;
+    animation-iteration-count:infinite;
+    }
+body{background: url("https://images.unsplash.com/photo-1606778303039-9fc1488b1d8a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+     background-repeat:no-repeat;
+     background-size:auto;
+     background-position:center;
+     background-attachment:fixed;
+     font-family:monospace;
+     text-align:center;
+     animation-name:up;
+    }
+div{
+    width:200px;
+    height:200px;
+    background-color:red;
+    animation-duration:2s;
+    animation-iteration-count:infinite;
+    position:relative;
+    animation-name:Slider;
+    border-radius:20px
+}
+p{color:white;font-size:20px;}
+a{color:black}
+a:hover{color:white}
+
+.container{
+    animation-name:machine1;
+    width:900px;
+    height:700px;
+    background-color:whitesmoke;
+}
+.float-child{
+    animation-name:machine;
+    width:200px;
+    height:600px;
+    float:left;
+    left:100px;
+    top:50px;
+}
+.machine-1{
+    animation-name:machine;
+    float:right;
+    width:200px;
+    height:600px;
+    right:100px;
+    top:50px;
+}
+
+.machine{
+    animation-name:machine;
+    float:middle;
+    width:200px;
+    height:600px;
+    background-color:green;
+    top:50px
+}
+.hello{
+    animation-iteration-count:1;
+}
+@keyframes Mainscreen{
+    0%{opacity:100%;}
+    100%{opacity:0%}
+}
+@keyframes label{
+    50%{color:red}
+    100%{color:pink}
+}
+@keyframes Slider{
+    0%{left:1920px}
+    50%{left:0px}
+    100%{left:1920px}
+}
+@keyframes slider2{
+    0%{left:1920px}
+    75%{left:0px}
+    100%{left:1920px}
+}
